@@ -24,7 +24,7 @@
 #X obj 30 183 hsl 128 15 0 127 0 0 g1pulsewidth settings26 pulsewidth
 4 7 0 10 -262144 -1 -1 0 1;
 #X obj 27 165 hradio 15 1 0 2 g1waveform settings23a waveform 0 -8
-0 10 -262144 -1 -1 1;
+0 10 -262144 -1 -1 0;
 #X obj 24 245 cnv 15 283 75 empty empty wavetables 0 -10 0 11 -203904
 -66577 0;
 #X obj 166 30 cnv 15 140 190 empty empty grain2 0 -10 0 11 -262130
@@ -35,8 +35,8 @@
 0 10 -262144 -1 -1 0 1;
 #X obj 27 248 hradio 15 1 0 5 wtwaveform3 settings25a triangle 80 8
 0 10 -262144 -1 -1 0;
-#X obj 170 248 hradio 15 1 0 5 wtwaveform4 settings25b sine 80 8 0
-10 -262144 -1 -1 2;
+#X obj 170 248 hradio 15 1 0 5 wtwaveform4 settings25b triangle 80
+8 0 10 -262144 -1 -1 0;
 #X floatatom 229 300 3 -63 64 1 transpose settings43offset wt4transpose
 , f 3;
 #X floatatom 170 300 3 0 127 1 detune settings32 wt4detune, f 3;
@@ -61,24 +61,24 @@
 #X obj 173 183 hsl 128 15 0 127 0 0 g2pulsewidth settings27 pulsewidth
 4 7 0 10 -262144 -1 -1 0 1;
 #X obj 170 165 hradio 15 1 0 2 g2waveform settings23b waveform 0 -8
-0 10 -262144 -1 -1 2;
+0 10 -262144 -1 -1 0;
 #X floatatom 170 202 3 -63 64 1 detune settings33offset g2detune,
 f 3;
 #X floatatom 229 203 3 -63 64 1 transpose settings34offset g2transpose
 , f 3;
 #X obj 309 30 cnv 15 140 290 empty empty volume_adsr&output 0 -10 0
 11 -260097 -66577 0;
-#X obj 314 33 hsl 128 15 0 127 0 0 aumin settings14 min 4 7 0 10 -262144
+#X obj 314 50 hsl 128 15 0 127 0 0 aumin settings14 min 4 7 0 10 -262144
 -1 -1 0 1;
-#X obj 314 50 hsl 128 15 0 127 0 0 aumax settings5 max 4 7 0 10 -262144
+#X obj 314 67 hsl 128 15 0 127 0 0 aumax settings5 max 4 7 0 10 -262144
 -1 -1 0 1;
-#X obj 314 67 hsl 128 15 0 127 0 0 auattack settings15 attack 4 7 0
+#X obj 314 84 hsl 128 15 0 127 0 0 auattack settings15 attack 4 7 0
 10 -262144 -1 -1 0 1;
-#X obj 314 84 hsl 128 15 0 127 0 0 audecay settings16 decay 4 7 0 10
--262144 -1 -1 0 1;
-#X obj 314 101 hsl 128 15 0 127 0 0 ausustain settings17 sustain 4
+#X obj 314 101 hsl 128 15 0 127 0 0 audecay settings16 decay 4 7 0
+10 -262144 -1 -1 0 1;
+#X obj 314 118 hsl 128 15 0 127 0 0 ausustain settings17 sustain 4
 7 0 10 -262144 -1 -1 0 1;
-#X obj 314 118 hsl 128 15 0 127 0 0 aurelease settings20 release 4
+#X obj 314 135 hsl 128 15 0 127 0 0 aurelease settings20 release 4
 7 0 10 -262144 -1 -1 0 1;
 #X obj 316 214 hsl 128 15 0 127 0 0 wtmin settings36 min 4 7 0 10 -262144
 -1 -1 0 1;
@@ -92,22 +92,22 @@ f 3;
 7 0 10 -262144 -1 -1 0 1;
 #X obj 316 299 hsl 128 15 0 127 0 0 wtrelease settings40 release 4
 7 0 10 -262144 -1 -1 0 1;
-#X obj 320 169 tgl 15 0 bit1s bit1r empty 17 7 0 10 -262144 -1 -1 0
+#X obj 320 170 tgl 15 0 bit1s bit1r empty 17 7 0 10 -262144 -1 -1 0
 1;
-#X obj 337 169 tgl 15 0 bit2s bit2r empty 17 7 0 10 -262144 -1 -1 0
+#X obj 337 170 tgl 15 0 bit2s bit2r empty 17 7 0 10 -262144 -1 -1 0
 1;
-#X obj 354 169 tgl 15 0 bit3s bit3r empty 17 7 0 10 -262144 -1 -1 0
+#X obj 354 170 tgl 15 0 bit3s bit3r empty 17 7 0 10 -262144 -1 -1 0
 1;
-#X obj 371 169 tgl 15 0 bit4s bit4r empty 17 7 0 10 -262144 -1 -1 0
+#X obj 371 170 tgl 15 0 bit4s bit4r empty 17 7 0 10 -262144 -1 -1 0
 1;
-#X obj 388 169 tgl 15 0 bit5s bit5r empty 17 7 0 10 -262144 -1 -1 0
+#X obj 388 170 tgl 15 0 bit5s bit5r empty 17 7 0 10 -262144 -1 -1 0
 1;
-#X obj 405 169 tgl 15 0 bit6s bit6r empty 17 7 0 10 -262144 -1 -1 0
+#X obj 405 170 tgl 15 0 bit6s bit6r empty 17 7 0 10 -262144 -1 -1 0
 1;
-#X obj 422 169 tgl 15 0 bit7s bit7r empty 17 7 0 10 -262144 -1 -1 0
+#X obj 422 170 tgl 15 0 bit7s bit7r empty 17 7 0 10 -262144 -1 -1 0
 1;
-#X text 332 150 bitreduction!!;
-#X obj 112 544 bng 15 250 50 0 fire bla manual_adsr 17 7 0 10 -262144
+#X text 332 151 bitreduction!!;
+#X obj 112 544 bng 15 250 50 0 fire bla man_adsr(cc113) 17 7 0 10 -262144
 -1 -1;
 #N canvas 696 74 450 300 seq 0;
 #X obj 149 274 noteout;
@@ -160,8 +160,8 @@ f 3;
 #X connect 17 0 5 0;
 #X connect 18 0 6 0;
 #X restore 27 565 pd seq;
-#X obj 24 343 cnv 15 283 175 empty empty lfo&transpose 0 -10 0 11 -4034
--66577 0;
+#X obj 24 343 cnv 15 283 175 empty empty lfo&mastertranspose 0 -10
+0 11 -4034 -66577 0;
 #X obj 30 378 hsl 128 15 0 127 0 0 lfospeed settings21 speed 4 7 0
 10 -262144 -1 -1 0 1;
 #X obj 30 395 hsl 128 15 0 127 0 0 lfodepth settings22 depth 4 7 0
@@ -1416,4 +1416,6 @@ f 3;
 #X connect 26 0 5 0;
 #X restore 88 93 pd wavetable;
 #X restore 235 578 pd brains;
+#X text 312 197 wavetables;
+#X text 311 32 grains;
 #X connect 2 0 57 0;
