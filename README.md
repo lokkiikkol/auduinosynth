@@ -4,6 +4,8 @@ all parameters are controllable by cc-messages, see the #defines in the beginnin
 
 expect some nasty sounds and 8bit heaven!!
 
+samples: https://soundcloud.com/simon-iten-294936446/auduinosynth (one channel is the auduino part, the other the wavetable part, both are coming simultaneously from the arduino)
+
 a puredata editor to control the synth, save to internal eeprom (19 presets,whohooo!!!), save to harddisk recall from synth etc.
 
 hardware-wise you only need: arduino uno, a jack connector, two 1k resistors and a 10nf capacitor.
